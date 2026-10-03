@@ -1,0 +1,6 @@
+step,rows_affected,rows_remaining,revenue_removed_eur,note
+Standardise text / country labels,0,4134,0.0,11 country abbreviations mapped to full names
+Drop 'Not assigned' placeholder row,1,4133,0.0,No region/country; revenue 0 but a €47.5k margin entry that cannot be allocated
+Drop negative-volume rows,7,4126,-140099.35710000992,Volume cannot be negative (returns booked as -kg)
+Flag exact duplicate rows (kept),0,4126,0.0,5 repeated rows flagged; no transaction ID to confirm
+Flag negative revenue / margin rows (kept),0,4126,0.0,"19 negative-revenue rows, 407 loss-making rows retained"
